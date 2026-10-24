@@ -36,7 +36,7 @@ Majority-class baseline on the test split ("always approve"): **0.650**.
 
 The notebook also shows a second, smaller issue from the original work: picking the decision threshold on the test set (0.797) instead of on out-of-fold training predictions (0.789).
 
-## Takeaways
+## What I learned
 
 - A generic outlier rule can silently erase a binary or near-constant feature. Checking `nunique()` before and after each preprocessing step catches it.
 - Report the majority-class baseline next to accuracy. Without it, 0.65 looked "low but plausible".
